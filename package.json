@@ -1,20 +1,51 @@
 {
   "version": "0.0.0",
   "scripts": {
+    "bootstrap": "yarn install",
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "prepare": "husky install",
+    "reinstall": "rimraf yarn.lock && rimraf package.lock.json && rimraf node_modules && npm run bootstrap"
   },
   "dependencies": {
     "ant-design-vue": "2",
     "vue": "^3.0.5"
   },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commintlint -e $HUSKY_GIT_PARAMS",
+      "pre-commit": "lint-staged",
+      "pre-push": "lint-staged"
+    }
+  },
+  "lint-saged": {
+    "*.{js,jsx,ts,tsx}": ["eslint --fix", "prettier --write"],
+    "{!(package)*.json,*.code-snippets,.!(browserslist)*rc}": ["prettier --write--parser json"],
+    "package.json": ["prettier --write"],
+    "*.vue": ["eslint --fix', 'prettier --write', 'stylelint --fix"],
+    "*.md": ["prettier --write"]
+  },
   "devDependencies": {
+    "@commitlint/cli": "^12.1.4",
+    "@commitlint/config-conventional": "^12.1.4",
     "@types/node": "^16.3.2",
     "@vitejs/plugin-vue": "^1.2.5",
     "@vue/compiler-sfc": "^3.0.5",
     "autoprefixer": "^10.3.1",
+    "commitizen": "^4.2.4",
+    "conventional-changelog-cli": "^2.1.1",
+    "crossenv": "^0.0.2-security",
+    "eslint": "^7.30.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-define-config": "^1.0.9",
+    "eslint-plugin-jest": "^24.3.6",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-vue": "^7.13.0",
+    "husky": "^7.0.1",
+    "lint-staged": "^11.0.1",
     "postcss": "^8.3.5",
+    "rimraf": "^3.0.2",
     "tailwindcss": "^2.2.4",
     "typescript": "^4.3.2",
     "vite": "^2.4.2",
