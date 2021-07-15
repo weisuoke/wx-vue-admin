@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="58fe9448-18fb-46f7-91d2-1239a629437d" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="58fe9448-18fb-46f7-91d2-1239a629437d" name="Default Changelist" comment="" />
+      <created>1626186791073</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1626186791073</updated>
+      <workItem from="1626186792635" duration="2799000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="4" y="-890" key="SettingsEditor" timestamp="1626330267130">
+      <screen x="-478" y="-1057" width="1920" height="1057" />
+    </state>
+    <state x="4" y="-890" key="SettingsEditor/26.23.1254.777/-478.-1057.1920.1057@-478.-1057.1920.1057" timestamp="1626330267130" />
+    <state x="225" y="-610" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1626329731653">
+      <screen x="-478" y="-1057" width="1920" height="1057" />
+    </state>
+    <state x="225" y="-610" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/26.23.1254.777/-478.-1057.1920.1057@-478.-1057.1920.1057" timestamp="1626329731653" />
+  </component>
+</project>
