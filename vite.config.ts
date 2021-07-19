@@ -4,6 +4,9 @@ import { loadEnv } from 'vite';
 import { resolve } from 'path';
 
 import vue from '@vitejs/plugin-vue';
+import vueJsx from '@vitejs/plugin-vue-jsx';
+import legacy from '@vitejs/plugin-legacy';
+
 import { wrapperEnv } from './build/utils';
 
 function pathResolve(dir: string) {
@@ -36,6 +39,6 @@ export default ({ command, mode }: ConfigEnv): UserConfig => {
       host: true,
       port: VITE_PORT,
     },
-    plugins: [vue()],
+    plugins: [vue(), vueJsx()],
   };
 };
