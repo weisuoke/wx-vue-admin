@@ -1,6 +1,15 @@
-import '/@/design/tailwind.css'
+import '/@/design/tailwind.css';
+import { setupRouter } from '/@/router';
 
-import { createApp } from 'vue'
-import App from './App.vue'
+import { createApp } from 'vue';
+import App from './App.vue';
 
-createApp(App).mount('#app')
+async function bootstrap() {
+  const app = createApp(App);
+
+  setupRouter(app);
+
+  app.mount('#app', true);
+}
+
+void bootstrap();

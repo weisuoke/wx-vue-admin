@@ -1,5 +1,5 @@
 <template>
-  Hello Vue
+  <div>Layout</div>
   <RouterView />
 </template>
 
@@ -7,8 +7,6 @@
   import { defineComponent } from 'vue';
 
   export default defineComponent({
-    name: 'App',
+    name: 'DefaultLayout',
   });
 </script>
-
-<style></style>
